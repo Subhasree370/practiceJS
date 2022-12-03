@@ -1,9 +1,3 @@
-
-
-const fs = require("fs");
-fs.writeFileSync("hello1.txt","This is a new file created by fileSystem");
-
-
 const studentData = [
     {
         name: 'Ram',
@@ -27,7 +21,6 @@ console.log(studentData);
 console.log("NEW studentData .............");
 const newStudentData = studentData.map(obj => {
     return {...obj, score: obj.score+20};
-    return obj;
 });
 
 console.log(newStudentData);
