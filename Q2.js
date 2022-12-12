@@ -3,12 +3,16 @@ const userData = {
     email: 'test@example.com'
 }
 const siteURL = 'https://redquark.org/leetcode/0020-valid-parentheses/xrxrp';
-var slugIndex = siteURL.lastIndexOf('/');
-slug = siteURL.substring(slugIndex+1);
 
+let slugIndex = siteURL.lastIndexOf('/');
+let slug = siteURL.substring(slugIndex+1);
+let slug1 = siteURL.split('/').pop();
 userData.slug = slug;
-const newUserData = { ...userData }; 
+userData.slug1 = slug1;
+
+const newUserData = { ...userData, slug1}; 
 
 console.log(slug);
 console.log("New User Data................");
+console.log(userData);
 console.log(newUserData);
