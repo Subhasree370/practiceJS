@@ -16,6 +16,8 @@ const studentData = [
         score: 69
     }
 ]
+//Q1:  write a function to increase all students score by 20. (use map or reduce method)
+
 
 console.log(studentData);
 console.log("NEW studentData .............");
